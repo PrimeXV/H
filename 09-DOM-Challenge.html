@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>DOM Challenge</title>
+</head>
+
+<body>
+  <!--
+ <button>9a</button>
+
+ <button class="second-button">9b</button>
+
+
+
+ <button class="js-heads" onclick="
+  clickHeads();
+ ">heads</button>
+
+ <button class="js-tails" onclick="
+ clickTails();
+ ">tails</button>
+
+ <p class="js-result"></p>
+-->
+
+
+  <input type="text"
+    onkeydown="
+    directClick(event);
+    "
+    placeholder="Name"
+    class="js-input">
+
+
+  <button class="js-submit"
+    onclick="
+buttonElement();
+">Submit</button>
+
+  <p class="js-output"></p>
+
+
+
+
+  <script>
+
+    function directClick(event) {
+      if (event.key === 'Enter') {
+         buttonElement();
+      }
+    }
+
+
+
+    function buttonElement() {
+      const text = document.querySelector('.js-input').value;
+      //const text = inputElement.value; 
+
+
+      document.querySelector('.js-output').innerHTML = `${text}`;
+
+    }
+
+
+
+
+
+
+    /*
+     console.log(document.querySelector('button'));
+    
+     document.querySelector('.second-button').innerHTML = '9b done!';
+    
+    
+     function clickHeads() {
+      document.querySelector('.js-result').innerHTML = 'You chose: heads';
+    
+     }
+    
+    
+     function clickTails() {
+       document.querySelector('.js-result').innerHTML = 'You chose: tails';
+     }
+     */
+
+
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.js-subscribe {
+  margin: 10px 0 60px 0;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#click {
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 10px 30px 10px 10px;
+}
+
+.js-calculate {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 11px 15px;
+  
+}
